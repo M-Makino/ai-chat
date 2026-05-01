@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "init": "npm install && node scripts/init.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npx vercel",
+    "deploy:prod": "npx vercel --prod"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.91.1",
+    "ai": "^6.0.170",
+    "mongoose": "^9.6.1",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
